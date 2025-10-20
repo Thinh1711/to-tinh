@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do You Love</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Nhạc nền -->
+    <audio id="bgMusic" src="./audio/sound.mp3" autoplay loop></audio>
+
+    <!-- Nút trái tim mở đầu -->
+    <div class="boxheart">
+        <div class="heart"><h1>Bấm vào đây</h1></div>
+        <div class="beat"></div>
+    </div>
+
+    <!-- Giao diện câu hỏi chính -->
+    <div class="boxchoose" onmouseenter="showImage('img1')">
+        <h2>
+            LÀM BẠN GÁI ANH NHÉ
+            <br/>
+            BẤY BI 💖
+        </h2>
+        <h4>
+            Em mà không trả lời hay thoát ra
+            <br/>
+            là đồng ý rồi đó nha :3
+        </h4>
+        <div class="boximghoverbtn">
+            <img id="img1" src="img/3.GIF" class="active" />
+            <img id="img2" src="img/4.GIF" />
+            <img id="img3" src="img/5.GIF" />
+        </div>
+        <div class="listbutton">
+            <button id="no" onmouseenter="showImage('img2')">Đéo :]</button>
+            <button id="yes" onmouseenter="showImage('img3')">Vâng :3</button>
+        </div>
+    </div>
+    
+    <!-- Popup khi đồng ý -->
+    <div class="popup">
+        <div class="inner">
+            <h3>
+                Anh biết em sẽ 
+                <br/>
+                đồng ý mà :>> 
+            </h3>
+            <img src="img/1.GIF" alt="" />
+            <p>
+                <span>MẶC VÁY VÀO ĐI</span>
+                <br/>
+                tý anh qua dẫn 
+                <br/>
+                <span>ĐI CHƠI</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Gọi file JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -7,16 +7,13 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- Nhạc nền -->
-    <audio id="bgMusic" src="./audio/sound.mp3" autoplay loop></audio>
-
-    <!-- Nút trái tim mở đầu -->
+    <!-- Tạo nút bấm trái tim mở đầu "bấm vào đây" -->
     <div class="boxheart">
         <div class="heart"><h1>Bấm vào đây</h1></div>
         <div class="beat"></div>
     </div>
 
-    <!-- Giao diện câu hỏi chính -->
+    <!-- Tạo giao diện câu hỏi chính -->
     <div class="boxchoose" onmouseenter="showImage('img1')">
         <h2>
             LÀM BẠN GÁI ANH NHÉ
@@ -29,9 +26,9 @@
             là đồng ý rồi đó nha :3
         </h4>
         <div class="boximghoverbtn">
-            <img id="img1" src="img/3.gif" class="active" />
-            <img id="img2" src="img/4.gif" />
-            <img id="img3" src="img/5.gif" />
+            <img id="img1" src="img/3.GIF" class="active" />
+            <img id="img2" src="img/4.GIF" />
+            <img id="img3" src="img/5.GIF" />
         </div>
         <div class="listbutton">
             <button id="no" onmouseenter="showImage('img2')">Đéo :]</button>
@@ -39,7 +36,7 @@
         </div>
     </div>
     
-    <!-- Popup khi đồng ý -->
+    <!-- Code tạo popup khi nhấn nút đồng ý -->
     <div class="popup">
         <div class="inner">
             <h3>
@@ -47,14 +44,13 @@
                 <br/>
                 đồng ý mà :>> 
             </h3>
-            <img src="img/1.gif" alt="" />
+            <img src="img/1.GIF" alt="" />
             <p>
                 <span>MẶC VÁY VÀO ĐI</span>
                 <br/>
                 tý anh qua dẫn 
                 <br/>
-                <span>ĐI CHƠI</span>
-            </p>
+                <span>ĐI CHƠI</span></p>
         </div>
     </div>
 
